@@ -47,7 +47,7 @@
 		047C40AE1C1A294700D6B267 /* ScreenCapture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenCapture.h; sourceTree = "<group>"; };
 		047C40B01C1A294700D6B267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		047C40C51C1A2A2D00D6B267 /* ScreenCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenCapture.swift; sourceTree = "<group>"; };
-		047C40CB1C1A2AFA00D6B267 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		047C40CB1C1A2AFA00D6B267 /* ScreenCaptureDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenCaptureDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		047C40CD1C1A2AFA00D6B267 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		047C40CF1C1A2AFA00D6B267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		047C40D21C1A2AFA00D6B267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				047C40AB1C1A294700D6B267 /* ScreenCapture.framework */,
-				047C40CB1C1A2AFA00D6B267 /* Example.app */,
+				047C40CB1C1A2AFA00D6B267 /* ScreenCaptureDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,9 +145,9 @@
 			productReference = 047C40AB1C1A294700D6B267 /* ScreenCapture.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		047C40CA1C1A2AFA00D6B267 /* Example */ = {
+		047C40CA1C1A2AFA00D6B267 /* ScreenCaptureDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 047C40EB1C1A2AFA00D6B267 /* Build configuration list for PBXNativeTarget "Example" */;
+			buildConfigurationList = 047C40EB1C1A2AFA00D6B267 /* Build configuration list for PBXNativeTarget "ScreenCaptureDemo" */;
 			buildPhases = (
 				047C40C71C1A2AFA00D6B267 /* Sources */,
 				047C40C81C1A2AFA00D6B267 /* Frameworks */,
@@ -159,9 +159,9 @@
 			dependencies = (
 				047C40F71C1A2D2D00D6B267 /* PBXTargetDependency */,
 			);
-			name = Example;
+			name = ScreenCaptureDemo;
 			productName = Example;
-			productReference = 047C40CB1C1A2AFA00D6B267 /* Example.app */;
+			productReference = 047C40CB1C1A2AFA00D6B267 /* ScreenCaptureDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -188,6 +188,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -197,7 +198,7 @@
 			projectRoot = "";
 			targets = (
 				047C40AA1C1A294700D6B267 /* ScreenCapture */,
-				047C40CA1C1A2AFA00D6B267 /* Example */,
+				047C40CA1C1A2AFA00D6B267 /* ScreenCaptureDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -369,7 +370,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -389,7 +390,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.nirix.ScreenCapture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -400,10 +401,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Example/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenCaptureDemo;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.nirix.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -414,10 +416,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Example/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenCaptureDemo;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.nirix.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -442,7 +445,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		047C40EB1C1A2AFA00D6B267 /* Build configuration list for PBXNativeTarget "Example" */ = {
+		047C40EB1C1A2AFA00D6B267 /* Build configuration list for PBXNativeTarget "ScreenCaptureDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				047C40EC1C1A2AFA00D6B267 /* Debug */,

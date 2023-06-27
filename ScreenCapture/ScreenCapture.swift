@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import AVFoundation
 
 // -------------------------------------------------------------------
 // Allow passing of strings, just convert them to an NSURL.
